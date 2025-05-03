@@ -20,7 +20,7 @@
   /* Spacing */
 
   --spacing-1600: 8rem;
-  --spacing-800: 3rem;
+  --spacing-600: 3rem;
   --spacing-500: 2.5rem;
   --spacing-400: 2rem;
   --spacing-300: 1.5rem;
@@ -51,7 +51,7 @@ body {
 @media (width > 700px) {
   body {
     margin: 0 3.125rem;
-    padding-top: var(--spacing-1600);
+    padding: var(--spacing-1600) var(--spacing-600) 0;
   }
 
   .card {
