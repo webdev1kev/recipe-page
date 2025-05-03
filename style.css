@@ -48,7 +48,7 @@ body {
 
 /* MEDIA QUERIES */
 
-@media (width > 700px) {
+@media (width > 600px) {
   body {
     margin: 0 3.125rem;
     padding: var(--spacing-1600) var(--spacing-600) 0;
