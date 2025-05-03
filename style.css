@@ -21,7 +21,7 @@
 
   --spacing-1600: 8rem;
   --spacing-800: 3rem;
-  --spacing-500: 2.5rem;
+  --spacing-500: 1.875rem;
   --spacing-400: 2rem;
   --spacing-300: 1.5rem;
   --spacing-200: 1rem;
@@ -38,7 +38,6 @@ body {
 }
 
 .card {
-  padding: var(--spacing-500);
   background-color: var(--white);
 
   width: 100%;
@@ -47,8 +46,9 @@ body {
 }
 
 .image {
-  object-fit: contain;
+  max-width: 100%;
 }
+
 /* MEDIA QUERIES */
 
 @media (width > 700px) {
@@ -60,5 +60,12 @@ body {
   .card,
   .image {
     border-radius: 24px;
+   
+  .card {
+    padding: var(--spacing-500);
+  }
+  .image {
+    height: 300px;
+    max-width: 100%;
   }
 }
