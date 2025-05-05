@@ -57,15 +57,41 @@ body {
     padding-top: var(--spacing-1600);
   }
 
-  .card,
+  .card {
+    border-radius: 24px;
+  }
   .image {
     border-radius: 24px;
-   
+    background-color: green;
+  }
+
   .card {
     padding: var(--spacing-500);
   }
-  .image {
-    height: 300px;
-    max-width: 100%;
+}
+.image {
+  height: auto;
+  max-width: 100%;
+}
+header {
+  font-family: "Young Serif";
+  font-weight: 400;
+  font-size: 40px;
+  width: 100%;
+  padding-top: var(--spacing-400);
+}
+p {
+  padding-top: var(--spacing-300);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  color: #5f564d;
+}
+@media (width < 700px) {
+  header {
+    padding-left: var(--spacing-400);
+    padding-right: var(--spacing-400);
+    font-size: 36px;
   }
 }
