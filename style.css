@@ -88,10 +88,16 @@ p {
   width: 100%;
   color: #5f564d;
 }
-@media (width < 700px) {
-  header {
-    padding-left: var(--spacing-400);
-    padding-right: var(--spacing-400);
-    font-size: 36px;
-  }
+header {
+  padding-left: var(--spacing-400);
+  padding-right: var(--spacing-400);
+  font-size: 36px;
+}
+
+p {
+  padding-left: var(--spacing-400);
+  padding-right: var(--spacing-400);
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400;
 }
