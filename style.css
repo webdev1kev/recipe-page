@@ -20,8 +20,8 @@
   /* Spacing */
 
   --spacing-1600: 8rem;
-  --spacing-600: 3rem;
-  --spacing-500: 2.5rem;
+  --spacing-800: 3rem;
+  --spacing-500: 1.875rem;
   --spacing-400: 2rem;
   --spacing-300: 1.5rem;
   --spacing-200: 1rem;
@@ -38,12 +38,15 @@ body {
 }
 
 .card {
-  padding: var(--spacing-500);
   background-color: var(--white);
 
   width: 100%;
   max-width: 700px;
   min-height: 18.75rem;
+}
+
+.image {
+  max-width: 100%;
 }
 
 /* MEDIA QUERIES */
@@ -57,4 +60,79 @@ body {
   .card {
     border-radius: 24px;
   }
+  .image {
+    border-radius: 24px;
+    background-color: green;
+  }
+
+  .card {
+    padding: var(--spacing-500);
+  }
+}
+.image {
+  height: auto;
+  max-width: 100%;
+}
+header {
+  font-family: "Young Serif";
+  font-weight: 400;
+  font-size: 40px;
+  width: 100%;
+  padding-top: var(--spacing-400);
+}
+p {
+  padding-top: var(--spacing-300);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  color: #5f564d;
+}
+header {
+  padding-left: var(--spacing-400);
+  padding-right: var(--spacing-400);
+  font-size: 36px;
+}
+
+p {
+  padding-left: var(--spacing-400);
+  padding-right: var(--spacing-400);
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 150%;
+}
+.prep-section {
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  padding: var(--spacing-300);
+  margin: var(--spacing-400);
+}
+.ingredients-section {
+  padding: var(--spacing-400);
+}
+h3 {
+  color: var(--rose-800);
+  font-family: "Outfit";
+  font-weight: 600;
+  padding-bottom: var(--spacing-200);
+}
+h2 {
+  font-family: "Young Serif";
+  color: var(--brown);
+}
+
+li {
+  color: var(--rose-800);
+  font-family: "Outfit";
+  text-wrap: wrap;
+}
+li span {
+  color: black;
+  padding-left: var(--spacing-200);
+  text-wrap: wrap;
+}
+li span a {
+  font-family: "Outfit";
+  font-weight: 700;
 }
